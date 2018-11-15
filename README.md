@@ -4,3 +4,16 @@ By: Arzan Irani and Milos Milic
 
 
 ##Introduction
+
+##Data Source
+
+##Objective/Question
+
+##Process to Analyse
+
+##Type of Analysis
+
+##How to report results
+
+
+
