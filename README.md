@@ -4,6 +4,7 @@ By: Arzan Irani and Milos Milic
 
 
 ##Introduction
+We wanted to find a n interesting data set where we can apply some of the newest methods 
 
 ##Data Source
 
