@@ -76,7 +76,7 @@ def main():
             sns.distplot(benign_breast_cancer_data[[feature]],
                          kde = False, ax = ax[row_num, col_num], color = 'grey', label = 'benign')
             ax[row_num, col_num].legend()
-    plt.savefig('../imgs/freature_histograms.png')
+    plt.savefig('../imgs/feature_histograms.png')
 
 
     features_to_explore_further = ['radius_mean', 'perimeter_mean',
