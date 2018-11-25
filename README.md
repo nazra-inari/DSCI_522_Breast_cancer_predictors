@@ -27,3 +27,18 @@ The type of analysis we will be running is a decision tree and we want to find w
 ## How to report results
 
 We will plot a decision tree and see if we can show the 5 factors from our analysis as well as the stump. We will also show a list of the strongest predictors of malignancy for breast cancer
+
+## Usage
+Run each script in this order to execute analysis and and then look in the results folder to see the report.
+```
+python 01_read_data.py
+
+python 02_eda_on_breast_cancer_data.py
+
+python 03_hyperparmeter_optimization.py
+
+python 04_final_breast_cancer_malignancy_decision_tree_classifier.py
+```
+
+## FInal Report 
+You can navigate to the results folder and see the final report in a file called final_report.ipynb
