@@ -2,17 +2,31 @@
 Decision tree analysis of breast cancer result metrics to deduce the strongest predictor of Breast Cancer malignancy
 By: Arzan Irani and Milos Milic
 
+#How to run the Analysis
+open a command prompt/ terminal
+
+Navigate to the root folder and type the following command:
+
+make all
+
+The report can be found below: https://github.com/UBC-MDS/DSCI_522_Breast_cancer_predictors/blob/master/results/final_report.ipynb
+
 ## Files Inputs, outputs and dependencies
 
 - 01_read_data.py  Input:  breast_cancer_data.csv Output: clean_breast_cancer_data.csv
 
 - 02_eda_on_breast_cancer_data.py Input: clean_breast_cancer_data.csv Output: clean_breast_cancer_data_after_dropped_features.csv /imgs/feature_histograms.png /imgs/box_plots.png
 
-- 03_hyperparmeter_optimization.py Input: clean_breast_cancer_data_after_dropped_features.csv  Output: /imgs/max_depth_graph.png, /imgs/min_sample_split_graph.png
+- 03_hyperparmeter_optimization.py
+
+Input: clean_breast_cancer_data_after_dropped_features.csv  Output: /imgs/max_depth_graph.png, /imgs/min_sample_split_graph.png
 
 - 04_final_breast_cancer_malignancy_decision_tree_classifier.py Input: clean_breast_cancer_data_after_dropped_features.csv Output: breast_cancer_malignancy_tree.pdf breast_cancer_malignancy_tree.file
 
-## Dependencies : argparse, pandas, numpy, seaborn, matplotlib, random, from sslearn: DecisionTreeClassifier, export_graphviz, CountVectorizer, train_test_split, CountVectorizer
+-- Dependencies : argparse, pandas, numpy, seaborn, matplotlib, random, from sslearn: DecisionTreeClassifier, export_graphviz, CountVectorizer, train_test_split, CountVectorizer
+
+
+
 
 
 
