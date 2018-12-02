@@ -35,7 +35,7 @@ from sklearn.model_selection import train_test_split
 
 def main():
     # Reading in the data in from the CSV in the data folder using pandas
-    breast_cancer_data = pd.read_csv("../data/clean_breast_cancer_data_after_dropped_features.csv")
+    breast_cancer_data = pd.read_csv("./data/clean_breast_cancer_data_after_dropped_features.csv")
     breast_cancer_data.head()
 
 
@@ -88,11 +88,11 @@ def main():
                                  special_characters=True, **kwargs)
 
         graph = graphviz.Source(dot_data)
-        graph.render(save_file_prefix, directory = '../imgs/')
+        graph.render(save_file_prefix, directory = './imgs/')
         return graph
 
     graph = save_and_show_decision_tree(breast_cancer_malignancy_classifier)
-    
+
 
 main()
     # In[ ]:
