@@ -39,7 +39,7 @@ import seaborn as sns
 def main():
 
 # Reading in the data in from the CSV in the data folder using pandas
-    breast_cancer_data = pd.read_csv("../data/clean_breast_cancer_data.csv")
+    breast_cancer_data = pd.read_csv("./data/clean_breast_cancer_data.csv")
 
 #Testing out the number of nulls in any of the columns
     summary_of_nulls = pd.DataFrame(columns=['column_name', 'number_of_nulls'])
@@ -76,7 +76,7 @@ def main():
             sns.distplot(benign_breast_cancer_data[[feature]],
                          kde = False, ax = ax[row_num, col_num], color = 'grey', label = 'benign')
             ax[row_num, col_num].legend()
-    plt.savefig('../imgs/feature_histograms.png')
+    plt.savefig('./imgs/feature_histograms.png')
 
 
     features_to_explore_further = ['radius_mean', 'perimeter_mean',
@@ -92,11 +92,11 @@ def main():
             sns.boxplot(x = "diagnosis", y = feature,
                 hue="diagnosis", palette=["red", "grey"], ax = ax2[row_num, col_num],
                 data=breast_cancer_data)
-    plt.savefig('../imgs/box_plots.png')
+    plt.savefig('./imgs/box_plots.png')
 
 
     breast_cancer_data = breast_cancer_data.iloc[:,0:12]
     breast_cancer_data
-    breast_cancer_data.to_csv("../data/clean_breast_cancer_data_after_dropped_features.csv",encoding='utf-8', index=False)
+    breast_cancer_data.to_csv("./data/clean_breast_cancer_data_after_dropped_features.csv",encoding='utf-8', index=False)
 
 main()

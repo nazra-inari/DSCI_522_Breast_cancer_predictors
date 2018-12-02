@@ -34,7 +34,7 @@ from sklearn.model_selection import train_test_split
 def main():
 
     # Reading in the data in from the CSV in the data folder using pandas
-    breast_cancer_data = pd.read_csv("../data/clean_breast_cancer_data_after_dropped_features.csv")
+    breast_cancer_data = pd.read_csv("./data/clean_breast_cancer_data_after_dropped_features.csv")
 
     test_depths = range(1,10)
 
@@ -67,7 +67,7 @@ def main():
     plt.xlabel("Max Depth of Tree")
     plt.ylabel("Accuracy Scores")
     plt.legend(labels = ['training','test'])
-    plt.savefig('../imgs/max_depth_graph.png')
+    plt.savefig('./imgs/max_depth_graph.png')
 
 
     accuracy_data = pd.DataFrame(columns=['depth', 'training_score', 'test_score'])
@@ -122,7 +122,7 @@ def main():
     plt.xlabel("Minimum Samples Split")
     plt.ylabel("Accuracy Scores")
     plt.legend(labels = ['training','test'])
-    plt.savefig('../imgs/min_sample_split_graph.png')
+    plt.savefig('./imgs/min_sample_split_graph.png')
 
 
 
