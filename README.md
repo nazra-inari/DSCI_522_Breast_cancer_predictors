@@ -33,7 +33,7 @@ The features contained in the data set are:
 - symmetry
 - fractal_dimension
 
-For eah of the 10 the mean, Standard Error and worst(outlier mean) was calculated
+For each of the 10 the mean, Standard Error and worst(outlier mean) was calculated
 
 
 ## Objective/Question
@@ -45,7 +45,7 @@ Time and resources permitting, we would also like to answer other questions like
 
 The data will imported from a csv into Python using Pandas. Following this, a decision tree classifier will be modeled and trained with SciKit Learn (a python package). This model will be trained on 75% of the data and tested for accuracy on the remaining 25% of the data. A reported accuracy score for the model will help a user understand the strength of this classifier.
 
-We chose to focus on the 10 mean features as the Standard Error is related to the mean and the worst values ignore a large number of cells present in the sample which introduces a bias to the data. 
+We chose to focus on the 10 mean features as the Standard Error is related to the mean and the worst values ignore a large number of cells present in the sample which introduces a bias to the data.
 
 ## Type of Analysis
 
