@@ -5,7 +5,7 @@
 # from within the data set, and then creating a decision tree classifier
 # to help classify future breast cancer data
 
-all : breast_cancer_malignancy_tree imgs/breast_cancer_malignancy_tree.pdf imgs/max_depth_graph.png imgs/min_sample_split_graph.png
+all : imgs/breast_cancer_malignancy_tree imgs/breast_cancer_malignancy_tree.pdf imgs/max_depth_graph.png imgs/min_sample_split_graph.png
 
 data/clean_breast_cancer_data.csv : data/breast_cancer_data.csv src/01_read_data.py
 	python src/01_read_data.py data/breast_cancer_data.csv data/clean_breast_cancer_data.csv
