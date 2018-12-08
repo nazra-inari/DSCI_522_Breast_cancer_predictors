@@ -28,14 +28,14 @@ RUN apt-get update \
 # get python package dependencies
 RUN apt-get install -y python3-tk
 
-# install numpy, pandas & matplotlib
+# install numpy, pandas, matplotlib, argparse, pandas, seaborn, sklearn, graphviz
 RUN pip3 install numpy
 RUN pip3 install argparse
 RUN pip3 install pandas
 RUN pip3 install seaborn
 # RUN pip3 install random
 RUN pip3 install sklearn
-
+RUN pip3 install graphviz
 
 # DecisionTreeClassifier, export_graphviz, CountVectorizer, train_test_split, CountVectorizer
 
