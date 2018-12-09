@@ -38,6 +38,11 @@ RUN pip3 install sklearn
 RUN pip --install-option="--prefix=$./" install graphviz
 #RUN brew install graphviz
 
+RUN mkdir /graphviz && \
+  apk add --update graphviz ttf-dejavu && \
+  rm -rf /var/cache/apk/*
+
+
 # DecisionTreeClassifier, export_graphviz, CountVectorizer, train_test_split, CountVectorizer
 
 
