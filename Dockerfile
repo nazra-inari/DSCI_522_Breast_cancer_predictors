@@ -36,8 +36,13 @@ RUN pip3 install seaborn
 # RUN pip3 install random
 RUN pip3 install sklearn
 
+RUN apt-get install -y graphviz && pip install graphviz
+RUN apt-get update && \
+    pip3 install sklearn && \
+    pip3 install argparse && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN apt-get install -y graphviz
+
 
 
 # DecisionTreeClassifier, export_graphviz, CountVectorizer, train_test_split, CountVectorizer
