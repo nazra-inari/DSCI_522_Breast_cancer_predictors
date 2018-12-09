@@ -35,7 +35,7 @@ RUN pip3 install pandas
 RUN pip3 install seaborn
 # RUN pip3 install random
 RUN pip3 install sklearn
-RUN pip --install-option="--prefix=$./" install graphviz
+#RUN pip --install-option="--prefix=$./" install graphviz
 #RUN brew install graphviz
 
 RUN mkdir /graphviz && \
