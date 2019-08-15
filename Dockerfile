@@ -44,10 +44,6 @@ RUN apt-get update && \
 
 
 
-
-# DecisionTreeClassifier, export_graphviz, CountVectorizer, train_test_split, CountVectorizer
-
-
 RUN apt-get update && \
     pip3 install matplotlib && \
     rm -rf /var/lib/apt/lists/*
